@@ -4,6 +4,7 @@ import { Theme, Link, Text, Box, Section } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { Override, StackItem, Stack, SocialMedia } from "@quarkly/components";
+import * as Components from "components";
 export default (() => {
 	return <Theme theme={theme}>
 		<GlobalQuarklyPageStyles pageUrl={"index"} />
@@ -14,6 +15,8 @@ export default (() => {
 			<meta name={"description"} content={"Web site created using quarkly.io"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
+		<Components.QuarklycommunityKitCarousel />
+		<Components.QuarklycommunityKitCounter />
 		<Section padding="64px 0" sm-padding="40px 0" font="--base" color="--dark">
 			<Text
 				as="h1"
