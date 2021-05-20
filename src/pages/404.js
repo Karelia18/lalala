@@ -17,6 +17,7 @@ export default (() => {
 			<meta name={"description"} content={"Web site created using quarkly.io"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
+		<Components.QuarklycommunityKitCounter />
 		<Section>
 			<Text margin="0px 0 24px 0" text-align="center" font="--headline2" md-font="--headline3">
 				Awesome Company
@@ -238,6 +239,9 @@ export default (() => {
 			</Link>
 		</Section>
 		<Components.QuarklycommunityKitMenu />
+		<Text>
+			Some text
+		</Text>
 		<Link
 			font={"--capture"}
 			font-size={"10px"}
